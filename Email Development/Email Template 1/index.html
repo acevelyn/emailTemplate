@@ -9,16 +9,42 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <style type="text/css">
         body {
             margin: 0;
+            background-color: #cccccc;
         }
 
         table {
+            /* get rid of default border spacing for all tables */
             border-spacing: 0;
         }
         td {
+            /*  get rid of default for all table cell/d padding */
             padding: 0;
         }
         img {
+            /* get rid of img default border */
             border: 0;
+        }
+        .wrapper {
+            /* so there is no space on sides */
+            width: 100%; 
+            /* background color stays the same on all email clients */
+            background-color: #cccccc;
+            /* make wrapper no wider than the .main table */
+            table-layout: fixed;
+            padding-bottom: 40px;
+        }
+        .main {
+            background-color: #ffffff;
+            /* reinforcing the center of the email template */
+            margin: 0 auto;
+            width: 100%;
+            /* 600px is about the standard width for an email */
+            max-width: 600px;
+            /* Get rid of the default border spacing for .main table */
+            border-spacing: 0;
+            /* Avoid Times New Roman for accessibility issues */
+            font-family: sans-serif;
+            color: #4a4a4a;
         }
 
         @media screen and (max-width: 600px) {
@@ -28,7 +54,32 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
     </style>
 </head>
 <body>
-    <h1>Test</h1>
+    <center class="wrapper">
+        <table class="main" width="100%">
 
+    <!-- SOCIAL MEDIA ICONS  -->
+        
+
+    <!-- LOGO SECTION  -->
+
+
+    <!-- GIT BANNER IMAGE  -->
+
+
+    <!-- TITLE, TEXT & BUTTON  -->
+
+
+    <!-- BORDER  -->
+
+
+    <!-- TWO COLUMN SECTION  -->
+
+
+    <!-- BACKGROUND QUOTE  -->
+
+
+    <!-- FOOTER SECTION  -->
+        </table>
+    </center>
 </body>
 </html>
