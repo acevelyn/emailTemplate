@@ -47,7 +47,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
             color: #4a4a4a;
         }
         .button {
-            background-color: blue;
+            background-color: #0059FB;
             color: #ffffff;
             border-radius: 8px;
             font-weight: bold;
@@ -65,7 +65,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
 </head>
 <body>
     <center class="wrapper">
-        <table class="main" width="100%">
+        <table class="main" width="100%" role="presentation">
             
     <!-- SOCIAL MEDIA ICONS  -->
         <tr>
@@ -73,10 +73,10 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                 <table width="100%">
                     <tr>
                         <td style="background-color:#4a4a4a; text-align:center; padding:8px 0 5px">
-                            <a href="#"><img src="https://via.placeholder.com/150x150" alt="icon" width="30"></a>
-                            <a href="#"><img src="https://via.placeholder.com/150x150" alt="icon" width="30"></a>
-                            <a href="#"><img src="https://via.placeholder.com/150x150" alt="icon" width="30"></a>
-                            <a href="#"><img src="https://via.placeholder.com/150x150" alt="icon" width="30"></a>
+                            <a href="#"><img src="https://via.placeholder.com/150x150" alt="instagram-icon" width="30"></a>
+                            <a href="#"><img src="https://via.placeholder.com/150x150" alt="linkedin-icon" width="30"></a>
+                            <a href="#"><img src="https://via.placeholder.com/150x150" alt="facebook-icon" width="30"></a>
+                            <a href="#"><img src="https://via.placeholder.com/150x150" alt="twitter-icon" width="30"></a>
                         </td>
                     </tr>
 
@@ -104,7 +104,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
             <td>
                 <!-- making img the width of email (600px) -->
                 <!-- making the max-width 100% so it takes up full email screen -->
-                <a href="#"><img src="https://via.placeholder.com/350x200" alt="Banner" width="600" style="max-width:100%;"></a>
+                <a href="#"><img src="https://via.placeholder.com/350x200" alt="Site Banner" width="600" style="max-width:100%;"></a>
             </td>
         </tr>
 
@@ -116,7 +116,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                     <td style="text-align:center; padding:15px;">
 
                         <!-- TITLE -->
-                        <p style="font-size:20px; font-weight:bold;">HTML Email Template<strong style="color:blue"> Course</strong></p>
+                        <p style="font-size:20px; font-weight:bold;">HTML Email Template<strong style="color:#0059FB"> Course</strong></p>
 
                         <!-- TEXT -->
                         <p style="font-size:15px; line-height:24px; padding:5px 0 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum pariatur id rem modi voluptatem. Labore, quaerat repudiandae harum ratione voluptate eos delectus debitis laboriosam impedit voluptatibus tempore quod ducimus quos?
@@ -132,7 +132,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
     <!-- BORDER  -->
     <tr>
-        <td style="background-color: blue; height: 5px;"></td>
+        <td style="background-color: #0059FB; height: 5px;"></td>
     </tr>
 
     <!-- TWO COLUMN SECTION  -->
@@ -141,26 +141,21 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                <table width="100%">
                  <tr>
                      <td class="two-columns">
-
-                        <table class="column">
-                            <tr>
-                                <td class="padding">
-                                    <tr>
-                                        <td>
-                                            <table class="content">
-                                                <tr>
-                                                    <td>
-                                                        <!-- ACTUAL CONTENT -->
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-                                </td>
-                            </tr>
-                          
-                        </table>
+                         <!-- Table for first column -->
+                         <table class="column">
+                             <tr>
+                                 <td class="padding"> 
+                                     <!-- Table for 1st column content -->
+                                    <table class="content">
+                                        <tr>
+                                            <td>
+                                                CONTENT
+                                            </td>
+                                        </tr>
+                                    </table>
+                                 </td>
+                             </tr>
+                         </table>
                      </td>
                  </tr>
                </table>
