@@ -17,7 +17,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
             border-spacing: 0;
         }
         td {
-            /*  get rid of default for all table cell/d padding */
+            /*  get rid of default for all table cell/data padding */
             padding: 0;
         }
         img {
@@ -52,9 +52,36 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
             border-radius: 8px;
             font-weight: bold;
             padding: 10px 20px;
-        }
-        a {
             text-decoration: none;
+        }
+
+        .two-columns {
+           text-align: center;
+           /* Get rid of any inherit font sizing, allows inline-block to work */
+            font-size: 0;
+            /* Adding spacing in the top and bottom  */
+            padding: 40px 0;
+
+        }
+
+        .two-columns .column {
+            /* Column to take up 100% of width on smaller screens  */
+            width: 100%;
+            /* Column to have only a max width of 300 so both columns are able to fit */
+            max-width: 300px;
+            /* Displays elements side by side  */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .two-columns .padding {
+            padding: 20px;
+        }
+
+        .two-columns .content {
+            text-align: left;
+            font-size: 15px;
+            /* Space out the paragraph text */
+            line-height: 20px;
         }
 
         @media screen and (max-width: 600px) {
@@ -91,7 +118,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                 <table width="100%">
                     <tr>
                         <td style="text-align:center; padding:10px">
-                            <a href="#"><img src="https://via.placeholder.com/600x150" alt="Logo" title="Logo" width="300"></a>
+                        <a href="#"><img src="https://via.placeholder.com/600x150" alt="Logo" title="Logo" width="300"></a>
                         </td>
                     </tr>
                 </table>
@@ -132,40 +159,62 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
     <!-- BORDER  -->
     <tr>
-        <td style="background-color: #0059FB; height: 5px;"></td>
+        <td height="5" style="background-color: #0059FB;"></td>
     </tr>
 
     <!-- TWO COLUMN SECTION  -->
-       <tr>
-           <td>
-               <table width="100%">
-                 <tr>
-                     <td class="two-columns">
-                         <!-- Table for first column -->
-                         <table class="column">
-                             <tr>
-                                 <td class="padding"> 
-                                     <!-- Table for 1st column content -->
+    <tr>
+        <td>
+            <table width="100%">
+
+
+                <tr>
+                    <td class="two-columns">
+
+                        <table class="column">
+                            <tr>
+                                <td class="padding">
                                     <table class="content">
                                         <tr>
-                                            <td>
-                                                CONTENT
+                                            <td><a href="#"><img src="https://placehold.co/560x420" alt="phone-image" width="260" style="max-width: 260px;"></a>
                                             </td>
                                         </tr>
                                     </table>
-                                 </td>
-                             </tr>
-                         </table>
-                     </td>
-                 </tr>
-               </table>
-           </td>
-       </tr>
+                                </td>
+                            </tr>
+                        </table>
 
-    <!-- BACKGROUND QUOTE  -->
+                        <table class="column">
+                            <tr>
+                                <td class="padding">
+                                    <table class="content">
+                                        <tr>
+                                            <td> 
+                                                <p style="font-size:17px; font-weight:bold;">Create Custom Emails</p>
+                                                <p style="padding-bottom: 15px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam adipisci molestias sunt ipsum necessitatibus dolorem asperiores excepturi.</p>
+                                                <a href="#" class="button">Read More</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
 
 
-    <!-- FOOTER SECTION  -->
+            </table>
+        </td>
+    </tr>
+
+
+
+
+
+
+
+     
         </table>
     </center>
 </body>
